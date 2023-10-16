@@ -2,7 +2,7 @@
     <head>
         <title>To Do List</title>
         <link rel="stylesheet" href="src/todo.css">
-        <script src="src/Todo.js" defer></script>
+        <script src="src/Todo.js" type="module" defer></script>
     </head>
 
     <body>
@@ -18,8 +18,8 @@
         <template id="task-item">
                 <input type="checkbox" name="task-done" id="task-done">
                 <slot name="task-name"></slot>
-                <button>Modifier</button>
-                <button>Supprimer</button>
+                <button id="edit">Modifier</button>
+                <button id="delete">Supprimer</button>
         </template>
 
         <h1>My ToDo list</h1>
